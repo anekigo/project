@@ -1,0 +1,277 @@
+.first {
+	padding-top: 90px;
+	background-color: @ddarkred;
+	position: relative;
+	
+	
+	
+	&:after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    content: "пирожинка";
+    .malina;
+    font-size: 184px;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
+	
+	.container {
+	width: 1250px;
+    padding-bottom: 80px;
+		
+		&:before {
+			content: "";
+			display: table;
+			}
+	}
+}
+
+.swiper-container {
+    width: 1250px;
+    padding-bottom: 80px;
+}
+
+.swiper-slide {
+	
+	&:before,:after {
+			content: "";
+			display: table;
+			}
+}
+
+.swiper-pagination-bullet-active {
+    background: #fca211;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	padding-bottom: 40px;
+}
+
+.left {
+	display: inline-block;
+    vertical-align: middle;
+    width: 135px;
+    text-align: center;
+    margin-right: 100px;
+	
+	&:hover {
+		.left-table{
+			opacity: 1;
+			left: 100%;
+			transition: opacity .3s;
+		}
+	}
+}
+
+.left__1 {
+	margin-bottom: 80px;
+    position: relative;
+}
+
+.left__picture {
+	margin: 0 auto;
+    margin-bottom: 15px;
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+	
+	&:hover {
+		    background: #fca211;
+	}
+}
+
+.left__picture-link {
+	display: block;
+    height: 100%;
+    background-position: center center;
+    background-image: url("../img/icons/spoonw.png");
+	background-repeat: no-repeat;
+	
+	&:hover {
+		background-image: url("../img/icons/spoon.png")
+	}
+}
+
+.left-table {
+	display: block;
+    color: #414141;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 20px;
+    position: absolute;
+    top: -72px;
+    left: -9999px;
+    padding: 50px 53px;
+    text-align: left;
+    font-size: 16px;
+    font-family: helvetica;
+	z-index: 100;
+	text-align: left;
+	border-collapse: collapse;
+    border-spacing: 0;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		border: 20px solid transparent;
+		border-right: 15px solid rgba(255, 255, 255, 0.92);
+		right: 100%;
+		top: 70px;
+	}
+	
+	&:after {
+		content: '';
+		position: absolute;
+		height: 240px;
+		width: 150px;
+		top: -0%;
+		left: -140px;
+	}
+}
+
+.left-table-body {
+		min-width: 280px;
+		display: block;
+}
+
+.left-item-1 {
+	position: relative;
+    width: 175px;
+    padding: 7px 0 7px 40px;
+	
+	&:before {
+		content: "";
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		background-image: url("../img/icons/dishes.png");
+		left: 0%;
+		top: 50%;
+		transform: translate(0, -50%);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+		.flour&:before {
+			background-position: 0 0;
+		}
+		
+		.eggs&:before {
+			background-position: -57px 0;
+		}
+		
+		.sugar&:before {
+			background-position: -226px 0;
+		}
+		
+		.butter&:before {
+			background-position: -167px 0;
+		}
+		
+		.milk&:before {
+			background-position: -112px 0;
+		}
+}
+
+.left__name {
+	font-size: 16px;
+    color: #fff;
+	font-family: Helvetica;
+}
+
+.left__term {
+	font-size: 13px;
+    color: rgba(255, 255, 255, 0.278);
+	font-family: Helvetica;
+}
+
+.left__time {
+	.malina;
+    font-size: 24px;
+    line-height: 20px;
+	color: @white;
+}
+
+.center__picture {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 60px;
+    width: 560px;
+}
+
+.center__picture-img {
+	display: block;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.right {
+	display: inline-block;
+    vertical-align: middle;
+    width: 380px;
+    color: #fff;
+	.malina;
+}
+
+.right__name {
+	font-size: 72px;
+    margin-bottom: 40px;
+}
+
+.right__text {
+	font-family: Helvetica;
+	font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.right__price {
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 72px;
+}
+
+.right__price-i {
+	
+	&:after {
+		background: url("../img/icons/rub.png") no-repeat center center;
+		content: '';
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 60px;
+		height: 60px;
+		display: inline-block;
+		}
+	}
+
+.right__button {
+	display: inline-block;
+    vertical-align: middle;
+    background: #fca211;
+    border-radius: 25px;
+    min-height: 40px;
+    text-align: center;
+    position: relative;
+    margin-left: 20px;
+    transition: all .3s;
+	
+	&:hover {
+    		background: #600c10;
+	}
+}
+
+.right__button-b {
+	transition: all .3s;
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #a4151c;
+	
+	&:hover {
+		    color: #fca211;
+	}
+}
+

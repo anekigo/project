@@ -1,0 +1,42 @@
+.inlineblock(@valign: top)  {
+	display: inline-block;
+	vertical-align: @valign;
+}
+
+.border-radius(@radius) {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.box-shadow(@shadow) {
+	box-shadow: @shadow;
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+}
+
+.btn(@color: #fff) {
+	width: 132px;
+	border: 2px solid @color;
+	color: @color;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+	left:100%;
+	border-radius: 25px;
+	padding: 5px 23px;
+	line-height: 28px;
+	
+		&:hover {
+			color: #fff;
+			background: @color;
+			transition: color .15s ease-in;
+			
+			}
+}
+
+.btn(@color) when (@color = #fff) {
+	&:hover {
+		color: @blue;
+	}
+}

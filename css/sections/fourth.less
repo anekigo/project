@@ -1,0 +1,254 @@
+.fourth {
+	background-image: radial-gradient(farthest-side at center center, #fff 40%, #c9c9c9);
+	
+	.container {
+		padding-bottom: 200px;
+    	padding-top: 180px;
+		
+		&:after, &:before {
+			content: "";
+			display: table;
+			}
+	}
+}
+
+.command__header {
+	margin-bottom: 60px;
+	
+	&:before,:after {
+	content: "";
+    display: table;
+	}
+}
+
+.command__header-about {
+	width: 400px;
+    display: inline-block;
+	vertical-align: top;
+    color: #2b2f5f;
+	.malina;
+    font-size: 72px;
+    line-height: 77.16px;
+}
+
+.persons__tabs-wr {
+	background: url("../img/content/cookerold.png") center bottom no-repeat;
+    min-height: 600px;
+}
+
+.persons__tabs-list {
+	float: right;
+}
+
+.persons__tabs-item {
+	display: inline-block;
+    vertical-align: top;
+}
+
+.persons__tabs-wr {
+	position: relative;
+}
+
+.persons__tabs-information {
+	background: url("../img/icons/qu.png") no-repeat;
+    background-position: 35% 0;
+    padding-top: 30px;
+	margin: 0;
+}
+
+.persons__tabs-i {
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+	
+    -webkit-columns: 360px 2;
+    -moz-columns: 360px 2;
+    columns: 360px 2;
+    -webkit-column-gap: 525px;
+    -moz-column-gap: 525px;
+    column-gap: 525px;
+}
+
+.persons__information-name {
+	transition: color 0.3s;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 20px 50px 25px;
+    position: relative;
+	border-radius: 20px;
+	z-index: 10;
+	
+	&:hover, .active {
+		background: #893213;
+		
+		.persons__information-name1 {
+			color: #fca211;
+		}
+		
+		.persons__information-name2 {
+			color: #fff;
+		}
+	}
+}
+
+.persons__information-name1 {
+	.malina;
+    font-size: 36px;
+    line-height: 40px;
+    color: #2b2f5f;
+    margin-bottom: 10px;
+}
+
+.persons__information-name2 {
+	font-size: 16px;
+    color: #8d8d8d;
+	font-family: Helvetica;
+}
+
+.persons__information-name.active:after, .persons__information-name:hover:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 20px solid transparent;
+    border-top: 10px solid #893213;
+}
+
+.buy {
+	width: 840px;
+    height: 410px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: url("../img/pattern/choco.jpg") center center no-repeat;
+    background-size: cover;
+	
+	&:before,:after {
+	content: "";
+    display: table;
+	}
+}
+
+.buy__now {
+	position: relative;
+	float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'als_malinaregular';
+    font-size: 64px;
+}
+
+.buy__now-text {
+	position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .malina;
+    color: #fff;
+ 	text-align: center;
+	font-size: 64px;
+}
+
+.buy__form {
+	position: relative;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 80px;
+    padding-top: 80px;
+    display: block;
+    float: left;
+    width: 50%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0 20px 20px 0;
+}
+
+.buy__form-in {
+	display: block;
+    background: transparent;
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+    outline: none;
+    width: 290px;
+}
+
+.buy__form-check {
+	display: block;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #fca211;
+    border: none;
+    bottom: -48px;
+    right: -48px;
+    transition: all 0.3s;
+	background-image: url("../img/icons/totheright.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	&:hover {
+		background: #600c10;
+		background-image: url("../img/icons/totheright_active.png");
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.call__label {
+	cursor: pointer;
+}
+
+.buy__call {
+	padding-left: 10px;
+	color: white;
+	display: inline-block;
+    cursor: pointer;
+	position: relative;
+}
+
+.buy__in {
+	position: absolute;
+    left: -9999px;
+}
+
+.buy__inreal {
+	margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    position: relative;
+    border-radius: 1px;
+}
+
+.buy__in:checked + .buy__inreal {
+	background: url("../img/icons/checkbox.png") no-repeat #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.call {
+	color: white;
+	font-size: 14px;
+}
+
+.acco__list-2 {
+	display: none;
+}
+
+#map {
+	width: 100%;
+	height: 500px;
+}

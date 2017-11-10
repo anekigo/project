@@ -1,0 +1,65 @@
+.fifth {
+	background: url("../img/pattern/sosweet.jpg");
+    background-size: cover;
+    min-height: 950px;
+	
+	.container {
+		width: 1000px;
+	}
+}
+
+.fifth__wrap {
+	padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.fifth__header {
+	font-size: 48px;
+    color: #fff;
+    text-align: center;
+	margin-bottom: 70px;
+	.malina;
+}
+
+.acco__list {
+	counter-reset: entry;
+}
+
+.acco__list-link {
+    font-size: 24px;
+	color: white;
+	cursor: pointer;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 25px;
+	
+	&:before {
+		counter-increment: entry;
+		content: counters(entry, " ") ". ";
+		}
+	
+	span {
+		border-bottom: 3px dashed #fff;
+		padding-bottom: 5px;
+	}
+}
+
+.active {
+	
+	.acco__list-link{
+		color: #fca211;
+	}
+	
+	span {
+		border: none;
+	}
+}
+
+.acco__list-2item {
+	font-size: 18px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+	font-family: Helvetica;
+	color: #fff;
+}
